@@ -1,30 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react';
 import {
     View,
     Text,
     Image,
     StyleSheet,
     TouchableOpacity,
-    na
 } from 'react-native'
 
-function Item(props) {
+function Item({title, tahun, durasi, image, navigation}) {
 
-    const handleInput = (id) => {
-        if(props.index === true){
-            // props.navigation.navigate('Description_film')
-            console.log("masuk")
-        }else{
-            null
-        }
+    const handleInput = () => {
+
+        navigation.navigate('Halaman1', {
+                title: title,
+                tahun : tahun,
+                durasi : durasi,
+                image : image,
+        })
+
     }
     return (
         <View>
             <View style={styles.slidefilm}>
                 <TouchableOpacity onPress={handleInput}>
-                    <Image style={styles.img} resizeMode={'stretch'} source={{ uri: props.img }} />
-                    <Text style={{ color: "white", textAlign: "center" }}>{props.title}</Text>
-                    <Text style={{ color: "white", textAlign: "center", fontSize: 10 }}>{props.rating}</Text>
+                    <Image style={styles.img} resizeMode={'stretch'} source={{ uri: image }} />
+                    <Text style={{ color: "white", textAlign: "center" }}>{title}</Text>
+                    <Text style={{ color: "white", textAlign: "center", fontSize: 10 }}>{durasi}</Text>
                 </TouchableOpacity>
             </View>
         </View>
