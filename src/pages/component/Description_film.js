@@ -12,7 +12,9 @@ function Description_film(props) {
             <Text styles={styles.text}>
                 Jamal
             </Text>
-
+            <Text>
+                text percobaan dilfa
+            </Text>
             <TouchableOpacity onPress={handleInput}>
                 <Text style={{color: "black", fontSize: 30}}>
                     Klick
