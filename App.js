@@ -8,6 +8,7 @@ import Home from "./src/pages/component/Home"
 import Description_film from './src/pages/component/Description_film';
 import Item from './src/pages/component/Item';
 import Halaman1 from './src/pages/component/Halaman1';
+import Header from './src/pages/component/Header';
 
 
 
@@ -23,6 +24,8 @@ function App() {
         <Stack.Screen name="Description_film" component={Description_film} />
         <Stack.Screen name="Item" component={Item} />
         <Stack.Screen name="Halaman1" component={Halaman1} />
+        <Stack.Screen name="Header" component={Header} />
+
 
 
       </Stack.Navigator>
