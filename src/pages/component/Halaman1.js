@@ -7,10 +7,14 @@ import {
     StyleSheet
 } from 'react-native'
 
+import Header from './Header'
+
 function Halaman1({ navigation, route }) {
 
     return (
         <View>
+
+            <Header />
             <Text style={{ color: "black", fontSize: 30 }}>
                 ini adalah = {route.params.title}
             </Text>
