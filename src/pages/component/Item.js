@@ -11,7 +11,7 @@ function Item({title, tahun, durasi, image, navigation}) {
 
     const handleInput = () => {
 
-        navigation.navigate('Halaman1', {
+        navigation.navigate('Description_film', {
                 title: title,
                 tahun : tahun,
                 durasi : durasi,
