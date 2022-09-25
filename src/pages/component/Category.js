@@ -15,7 +15,7 @@ function Category({ navigation, route }) {
     return (
         <ScrollView style={{backgroundColor: "black", flex: 1}} >
             <View>
-                <Header />
+                <Header navigation={navigation} />
             </View>
 
             <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10,}}>
