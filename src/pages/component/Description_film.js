@@ -1,10 +1,13 @@
 import React from 'react'
 import {View, Text, StyleSheet, TouchableOpacity, Image, TextInput} from 'react-native'
 
-function Description_film(props) {
+
+import Navbar from './Navbar'
+
+function Description_film({navigation, route}) {
 
     const handleInput = () => {
-        props.navigation.navigate('Home')
+        navigation.navigate('Home')
     }
 
     return (
@@ -52,6 +55,11 @@ const styles = StyleSheet.create({
     text: {
         color: "red",
         fontSize: 50
+    },
+    img: {
+        width: 100,
+        height: 100,
+
     }
 })
 
