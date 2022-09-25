@@ -1,29 +1,21 @@
 import React from 'react'
 import {View, Text, StyleSheet, TouchableOpacity, Image, TextInput} from 'react-native'
+import Navbar from './Navbar'
 
-function Description_film(props) {
+function Description_film({navigation, route}) {
 
     const handleInput = () => {
-        props.navigation.navigate('Home')
+        navigation.navigate('Home')
     }
 
     return (
         <View style={{backgroundColor: "black"}}>
-            <Text style={{color: "red"}}>
-                Logo Netflox dan Icon Pencarian
-            </Text>
-            <TouchableOpacity onPress={handleInput}>
-                <Text style={{color: "black", fontSize: 30}}>
-                    Klick
-                </Text>
-            </TouchableOpacity>
-        
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <Image
-                    source={require('../img/gambar_film.jpeg')}
-                    style={{width: 415, height: 250}}
-                    resizeMode="contain"
-                />
+            <View>
+                <Navbar navigation={navigation} />
+            </View>
+
+            <View>
+                <Image style={styles.img} resizeMode={'stretch'} source={{ uri: route.params.image }} />
             </View>
 
             <Text style={{color: "white", fontSize: 13, textAlign: 'right', marginEnd: 10}}>
@@ -52,6 +44,11 @@ const styles = StyleSheet.create({
     text: {
         color: "red",
         fontSize: 50
+    },
+    img: {
+        width: 100,
+        height: 100,
+
     }
 })
 

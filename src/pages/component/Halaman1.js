@@ -3,34 +3,27 @@ import {
     View,
     Text,
     TouchableOpacity,
-    Image,
-    StyleSheet
+    StyleSheet,
+    Dimensions
 } from 'react-native'
 
-import Header from './Header'
 
-function Halaman1({ navigation, route }) {
+const {height, width} = Dimensions.get("window");
+
+
+function Halaman1({navigation }) {
 
     return (
         <View>
 
-            <Header />
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.title}
-            </Text>
-
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.tahun}
-            </Text>
-
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.durasi}
-            </Text>
-            <View>
-                <Image style={styles.img} resizeMode={'stretch'} source={{ uri: route.params.image }} />
+            <View style={styles.header}>
+                <Text style={styles.logo}>NETFLOX</Text>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('Halaman1')}
+                >
+                    <Text style={styles.category}>CATEGORY</Text>
+                </TouchableOpacity>
             </View>
-
-
 
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                 <Text style={{ color: "red", fontSize: 50 }}>
@@ -38,13 +31,30 @@ function Halaman1({ navigation, route }) {
                 </Text>
             </TouchableOpacity>
         </View>
+
     )
 }
 
 const styles = StyleSheet.create({
-    img: {
-        width: 100,
-        height: 100,
+    logo: {
+        color: "red",
+        fontSize: 30,
+        fontWeight: "bold",
+        height: height/20,
+        marginVertical:15
+    },
+    category: {
+        color: "white",
+        fontSize: 20,
+        fontWeight: "bold",
+        height: height/20,
+        marginVertical:20
+    },
+    header: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        backgroundColor: "black",
+        paddingHorizontal: 20
 
     }
 
