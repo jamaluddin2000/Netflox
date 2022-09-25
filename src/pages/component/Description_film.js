@@ -26,14 +26,18 @@ function Description_film(props) {
                 />
             </View>
 
-            <Text style={{color: "white", fontSize: 13, textAlign: 'right', marginEnd: 10}}>
-                8.5 - View
+            <Text style={{color: "white", fontSize: 30, textAlign: 'left', marginLeft: 10}}>
+                The Lion King
+            </Text>
+
+            <Text style={{color: "darkgray", fontSize: 13, textAlign: 'left', marginLeft: 10, marginVertical: 5}}>
+                2022       18+           8.5 - View
             </Text>
            
             <Text style={{
                 color: "white", fontSize: 13, textAlign: 'center', 
                 borderWidth: 1, borderColor: "gray", borderRadius: 3, 
-                margin: 5, marginEnd: 280}}>
+                margin: 10, marginEnd: 280}}>
                 Genre
            </Text>
 
