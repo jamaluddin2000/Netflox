@@ -35,7 +35,7 @@ function Description_film(props) {
                 <Text style={{
                     color: "darkgray", 
                     fontSize: 13, 
-                    marginLeft: 10, 
+                    marginLeft: 5, 
                     marginRight: 20}}>
                     2022
                 </Text>
@@ -57,7 +57,7 @@ function Description_film(props) {
             <Text style={{
                 color: "white", fontSize: 13, textAlign: 'center',
                 borderWidth: 1, borderColor: "gray", borderRadius: 3,
-                marginTop: 10, marginEnd: 280
+                marginTop: 10, marginLeft: 5, marginEnd: 280
             }}>
                 Genre
             </Text>
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
         color: "white", 
         fontSize: 30, 
         textAlign: 'left', 
-        margin: 5 
+        margin: 5
     },
     title2: {
 
