@@ -8,12 +8,8 @@ import Home from "./src/pages/component/Home"
 import Description_film from './src/pages/component/Description_film';
 import Item from './src/pages/component/Item';
 import Halaman1 from './src/pages/component/Halaman1';
-<<<<<<< HEAD
-import Header from './src/pages/component/Header';
-=======
 import Category from './src/pages/component/Category';
 import Navbar from './src/pages/component/Navbar';
->>>>>>> 57e8a87e5346fe6c382c551d058afa490f5cb01a
 
 
 
@@ -35,7 +31,6 @@ function App() {
 =======
         <Stack.Screen name="Category" component={Category} />
         <Stack.Screen name="Navbar" component={Navbar} />
->>>>>>> 57e8a87e5346fe6c382c551d058afa490f5cb01a
 
 
       </Stack.Navigator>
