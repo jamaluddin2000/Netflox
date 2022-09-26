@@ -25,10 +25,10 @@ function App() {
         <Stack.Screen name="Description_film" component={Description_film} />
         <Stack.Screen name="Item" component={Item} />
         <Stack.Screen name="Halaman1" component={Halaman1} />
-<<<<<<< HEAD
+
         <Stack.Screen name="Header" component={Header} />
 
-=======
+
         <Stack.Screen name="Category" component={Category} />
         <Stack.Screen name="Navbar" component={Navbar} />
 
