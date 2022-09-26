@@ -5,7 +5,12 @@ import {
     Image,
     StyleSheet,
     TouchableOpacity,
+    Dimensions
 } from 'react-native'
+
+// import {width, height} from "./Home"
+const {height, width} = Dimensions.get("window");
+
 
 function Item({title, tahun, durasi, image, navigation}) {
 
@@ -34,12 +39,12 @@ function Item({title, tahun, durasi, image, navigation}) {
 
 const styles = StyleSheet.create({
     img: {
-        width: 100,
-        height: 100,
+        width: width/4,
+        height:  height/5,
 
     },
     slidefilm: {
-        addingHorizontal: 20,
+        // addingHorizontal: 20,
         width: 100,
         marginHorizontal: 10
     }
