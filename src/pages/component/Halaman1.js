@@ -7,31 +7,6 @@ import {
     Dimensions
 } from 'react-native'
 
-<<<<<<< HEAD
-import Header from './Header'
-
-function Halaman1({ navigation, route }) {
-
-    return (
-        <View>
-
-            <Header />
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.title}
-            </Text>
-
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.tahun}
-            </Text>
-
-            <Text style={{ color: "black", fontSize: 30 }}>
-                ini adalah = {route.params.durasi}
-            </Text>
-            <View>
-                <Image style={styles.img} resizeMode={'stretch'} source={{ uri: route.params.image }} />
-            </View>
-
-=======
 
 const {height, width} = Dimensions.get("window");
 
@@ -40,7 +15,6 @@ function Halaman1({navigation }) {
 
     return (
         <View>
->>>>>>> 57e8a87e5346fe6c382c551d058afa490f5cb01a
 
             <View style={styles.header}>
                 <Text style={styles.logo}>NETFLOX</Text>

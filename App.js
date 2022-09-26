@@ -26,7 +26,6 @@ function App() {
         <Stack.Screen name="Item" component={Item} />
         <Stack.Screen name="Halaman1" component={Halaman1} />
 
-        <Stack.Screen name="Header" component={Header} />
 
 
         <Stack.Screen name="Category" component={Category} />
