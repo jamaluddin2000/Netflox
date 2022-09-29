@@ -8,6 +8,7 @@ import {
 } from 'react-native'
 
 
+<<<<<<< HEAD
 import Header from './Header'
 
 function Halaman1({ navigation, route }) {
@@ -19,6 +20,15 @@ function Halaman1({ navigation, route }) {
             <Text style={{ color: "black", fontSize: 30 }}>
                 ini adalah = {route.params.title}
             </Text>
+=======
+const {height, width} = Dimensions.get("window");
+
+
+function Halaman1({navigation }) {
+
+    return (
+        <View>
+>>>>>>> e6b8ceaeb69dd81758bac376971274ad569abf32
 
             <View style={styles.header}>
                 <Text style={styles.logo}>NETFLOX</Text>
