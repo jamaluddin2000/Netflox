@@ -51,7 +51,7 @@ function Navbar({ navigation }) {
 
 const styles = StyleSheet.create({
     logo: {
-        color: "red",
+        color: "#FF9900",
         fontSize: 30,
         fontWeight: "bold",
         height: height / 20,

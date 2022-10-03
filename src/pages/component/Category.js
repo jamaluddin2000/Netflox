@@ -8,47 +8,47 @@ import {
     ScrollView
 } from 'react-native'
 
-import Header from './Navbar'
+import Navbar from './Navbar'
 
 function Category({ navigation, route }) {
 
     return (
         <ScrollView style={{backgroundColor: "black", flex: 1}} >
             <View>
-                <Header />
+                <Navbar />
             </View>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10,}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Action
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Drama
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Comedy
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Thiler
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Biografy
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
+            <TouchableOpacity style={styles.list_kategori}>
                 <Text >
                     Action
                 </Text>
@@ -90,6 +90,16 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
 
+    },
+    list_kategori : {
+        color: "white",
+        borderColor: "#FF9900",
+        borderWidth: 1,
+        alignItems: "center",
+        // backgroundColor: "#FF9900",
+        marginHorizontal: 40, 
+        marginVertical: 15, 
+        padding: 30, 
     }
 
 })
