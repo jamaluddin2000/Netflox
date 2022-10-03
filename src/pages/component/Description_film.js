@@ -1,15 +1,7 @@
-import React from 'react'
-<<<<<<< HEAD
-import {View, Text, StyleSheet, TouchableOpacity, Image, TextInput} from 'react-native'
-
-
-import Navbar from './Navbar'
-=======
-import {View, Text, StyleSheet, ScrollView, Image, TextInput, Dimensions} from 'react-native'
+import {View, Text, StyleSheet, ScrollView, Image, Dimensions} from 'react-native'
 import Navbar from './Navbar'
 
 export const { height, width } = Dimensions.get("window");
->>>>>>> e6b8ceaeb69dd81758bac376971274ad569abf32
 
 function Description_film({navigation, route}) {
 
@@ -18,32 +10,14 @@ function Description_film({navigation, route}) {
     }
 
     return (
-<<<<<<< HEAD
-        <View style={{backgroundColor: "black"}}>
-            <Text style={{color: "red"}}>
-                Logo Netflox dan Icon Pencarian
-            </Text>
-            <TouchableOpacity onPress={handleInput}>
-                <Text style={{color: "black", fontSize: 30}}>
-                    Klick
-                </Text>
-            </TouchableOpacity>
-        
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <Image
-                    source={require('../img/gambar_film.jpeg')}
-                    style={{width: 415, height: 250}}
-                    resizeMode="contain"
-                />
-=======
-        <ScrollView style={{backgroundColor: "black"}}>
+    <ScrollView style={{backgroundColor: "black"}}>
             <View>
                 <Navbar navigation={navigation} />
             </View>
 
             <View>
                 <Image style={styles.img} resizeMode={'stretch'} source={{ uri: route.params.image }} />
->>>>>>> e6b8ceaeb69dd81758bac376971274ad569abf32
+
             </View>
 
             <Text style={styles.title}>
