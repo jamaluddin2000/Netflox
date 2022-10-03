@@ -1,5 +1,4 @@
-import React from 'react'
-import {View, Text, StyleSheet, ScrollView, Image, TextInput, Dimensions} from 'react-native'
+import {View, Text, StyleSheet, ScrollView, Image, Dimensions} from 'react-native'
 import Navbar from './Navbar'
 
 export const { height, width } = Dimensions.get("window");
@@ -11,7 +10,7 @@ function Description_film({navigation, route}) {
     }
 
     return (
-        <ScrollView style={{backgroundColor: "black"}}>
+    <ScrollView style={{backgroundColor: "black"}}>
             <View>
                 <Navbar navigation={navigation} />
             </View>
