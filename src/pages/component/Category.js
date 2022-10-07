@@ -5,10 +5,16 @@ import {
     TouchableOpacity,
     Image,
     StyleSheet,
-    ScrollView
+    ScrollView,
+    Dimensions
 } from 'react-native'
 
 import Navbar from './Navbar'
+
+import AntDesigner from 'react-native-vector-icons/AntDesign';
+
+const {height, width} = Dimensions.get("window");
+
 
 function Category({ navigation, route }) {
 
@@ -18,38 +24,40 @@ function Category({ navigation, route }) {
                 <Navbar />
             </View>
 
+
+
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text} >
                     Action
                 </Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text}  >
                     Drama
                 </Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text}  >
                     Comedy
                 </Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text}  >
                     Thiler
                 </Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text} >
                     Biografy
                 </Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.list_kategori}>
-                <Text >
+                <Text style={styles.text} >
                     Action
                 </Text>
             </TouchableOpacity>
@@ -92,14 +100,17 @@ const styles = StyleSheet.create({
 
     },
     list_kategori : {
-        color: "white",
         borderColor: "#FF9900",
         borderWidth: 1,
         alignItems: "center",
-        // backgroundColor: "#FF9900",
         marginHorizontal: 40, 
         marginVertical: 15, 
         padding: 30, 
+    },
+    text : {
+        color: 'white',
+        fontSize: 20,
+        fontWeight:'bold',
     }
 
 })

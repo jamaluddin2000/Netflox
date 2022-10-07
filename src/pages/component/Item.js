@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     },
     slidefilm: {
         // addingHorizontal: 20,
-        width: 100,
-        marginHorizontal: 10
+        width: width/4,
+        marginHorizontal: width/50
     }
 
 })

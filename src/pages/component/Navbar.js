@@ -22,7 +22,7 @@ function Navbar({ navigation }) {
 
     const handleHome = () => {
 
-        navigation.navigate('Category')
+        navigation.navigate('Home')
 
     }
 
