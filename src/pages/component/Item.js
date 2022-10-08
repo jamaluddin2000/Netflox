@@ -34,9 +34,9 @@ function Item({ title, tahun, durasi, image, navigation }) {
                     <Image style={styles.img} resizeMode={'stretch'} source={{ uri: image }} />
                     <Text style={{ color: "white", width: "100%" }}>{title}</Text>
                     {/* <Text style={{ color: "white",  fontSize: 10 }}>{durasi}</Text> */}
-                    <View  >
-                        <IconStar2 fill="yellow" width={10} height={10} />
-                        <Text style={{color: "white", fontSize: 10}}>
+                    <View>
+                        <Text style={{color: "white", fontSize: 10, alignSelf: 'flex-end'}}>
+                        <IconStar2 fill="yellow" width={10} height={10}    />
                             8.6
                         </Text>
                     </View>
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
     slidefilm: {
         // addingHorizontal: 20,
         width: width / 4,
-        marginHorizontal: width / 50
+        marginHorizontal: width / 50,
+
     }
 
 })
