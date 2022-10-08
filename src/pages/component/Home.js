@@ -16,6 +16,9 @@ import Item from './Item';
 export const { height, width } = Dimensions.get("window");
 
 
+
+
+
 function Home({ navigation }) {
     const initialState = [
         {
@@ -65,6 +68,7 @@ function Home({ navigation }) {
             <View >
                 <Navbar navigation={navigation} />
             </View>
+           
             <View>
                 <TouchableOpacity>
                     <Image

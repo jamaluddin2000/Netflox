@@ -11,8 +11,6 @@ import {
 
 import Navbar from './Navbar'
 
-import AntDesigner from 'react-native-vector-icons/AntDesign';
-
 const {height, width} = Dimensions.get("window");
 
 
@@ -25,6 +23,9 @@ function Category({ navigation, route }) {
             </View>
 
 
+            <View>
+                <AntDesigner name='FastBackwardOutlined' style={{color: "white", fontSize: 30}} />
+            </View>
 
             <TouchableOpacity style={styles.list_kategori}>
                 <Text style={styles.text} >
