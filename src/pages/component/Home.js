@@ -16,6 +16,9 @@ import Item from './Item';
 export const { height, width } = Dimensions.get("window");
 
 
+
+
+
 function Home({ navigation }) {
     const initialState = [
         {
@@ -65,6 +68,7 @@ function Home({ navigation }) {
             <View >
                 <Navbar navigation={navigation} />
             </View>
+           
             <View>
                 <TouchableOpacity>
                     <Image
@@ -73,11 +77,10 @@ function Home({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={{ marginTop: 10 }}>
-                <Text style={{ fontSize: 30, color: "white", fontWeight: "bold", marginLeft: 10 }}>Ghost Writer</Text>
-                <Text style={{ fontSize: 12, color: "white", fontWeight: "400", marginLeft: 10 }}>Pencari hantu yang handal</Text>
+                <Text style={styles.tilte}>Ghost Writer</Text>
             </View>
 
-            <Text style={{ color: "white", fontSize: 30, paddingVertical: 20, paddingHorizontal: 10 }}>Featured today</Text>
+            <Text style={styles.Title_Bagian}>Featured today</Text>
 
             <FlatList
                 data={listData}
@@ -94,7 +97,7 @@ function Home({ navigation }) {
                 horizontal={true}
             />
 
-            <Text style={{ color: "white", fontSize: 30, paddingVertical: 20, paddingHorizontal: 10 }}>More to explore</Text>
+            <Text style={styles.Title_Bagian}>More to explore</Text>
 
             <FlatList
                 data={listData}
@@ -127,6 +130,22 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: "bold"
     },
+    Title_Bagian: {
+        color: "white", 
+        fontSize: 30, 
+        paddingHorizontal: "3%", 
+        borderLeftWidth: 10,
+        borderColor: "#FF9900",
+        marginVertical: 30,
+        marginLeft: width/20,
+        paddingLeft: width/20
+    },
+    tilte : {
+        color: "#FF9900",
+        fontSize: 50, 
+        fontWeight: "bold", 
+        marginLeft: '3%'
+    }
 
 })
 

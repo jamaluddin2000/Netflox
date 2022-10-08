@@ -5,51 +5,55 @@ import {
     TouchableOpacity,
     Image,
     StyleSheet,
-    ScrollView
+    ScrollView,
+    Dimensions
 } from 'react-native'
 
-import Header from './Navbar'
+import Navbar from './Navbar'
+
+const {height, width} = Dimensions.get("window");
+
 
 function Category({ navigation, route }) {
 
     return (
         <ScrollView style={{backgroundColor: "black", flex: 1}} >
             <View>
-                <Header navigation={navigation} />
+                <Navbar />
             </View>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10,}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text} >
                     Action
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text}  >
                     Drama
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text}  >
                     Comedy
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text}  >
                     Thiler
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text} >
                     Biografy
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{color: "white", backgroundColor: "red", marginHorizontal: 40, marginVertical: 15, padding: 30, borderRadius: 10}}>
-                <Text >
+            <TouchableOpacity style={styles.list_kategori}>
+                <Text style={styles.text} >
                     Action
                 </Text>
             </TouchableOpacity>
@@ -90,6 +94,19 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
 
+    },
+    list_kategori : {
+        borderColor: "#FF9900",
+        borderWidth: 1,
+        alignItems: "center",
+        marginHorizontal: 40, 
+        marginVertical: 15, 
+        padding: 30, 
+    },
+    text : {
+        color: 'white',
+        fontSize: 20,
+        fontWeight:'bold',
     }
 
 })
