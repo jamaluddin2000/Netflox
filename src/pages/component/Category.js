@@ -18,9 +18,7 @@ function Category({ navigation, route }) {
 
     const handleAction = () => {
 
-        navigation.navigate('HalamanCategory', {
-
-        })
+        navigation.navigate('HalamanCategory')
 
     }
 

@@ -14,13 +14,6 @@ const { height, width } = Dimensions.get("window");
 
 
 function HalamanCategory({ navigation }) {
-    const handleInput = () => {
-
-        navigation.navigate('Description_film', {
-        })
-
-    }
-
     return (
         <View style={{ backgroundColor: "black", flex: 1 }}>
 
@@ -28,28 +21,20 @@ function HalamanCategory({ navigation }) {
                 <Navbar navigation={navigation} />
             </View>
 
+
+
             <View>
-                Action
+                <Text>
+                    Action
+                </Text>
             </View>
 
-            <View >
-            <Image style={styles.img} source={require('../img/Frame_7.png')} />  
-            </View>
-
-            {/* <View style={styles.header}>
-                <Text style={styles.logo}>NETFLOX</Text>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Halaman1')}
-                >
-                    <Text style={styles.category}>CATEGORY</Text>
-                </TouchableOpacity>
-            </View>
 
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                 <Text style={{ color: "red", fontSize: 50 }}>
                     Click mamank
                 </Text>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
         </View>
 
     )
