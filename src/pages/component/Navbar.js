@@ -12,12 +12,13 @@ const { height, width } = Dimensions.get("window");
 
 
 
-function Navbar({ navigation }) {
+function Navbar({ navigation, data }) {
 
     const handleCategory = () => {
 
-        navigation.navigate('Category')
-
+        navigation.navigate('Category',{
+            data : data
+        })
     }
 
     const handleHome = () => {
@@ -35,12 +36,10 @@ function Navbar({ navigation }) {
                 <Text style={styles.logo}>NETFLOX</Text>
             </TouchableOpacity>
 
-            
-
             <TouchableOpacity
                 onPress={handleCategory}
             >
-                <Text style={styles.category}>CATEGORY</Text>
+                <Text style={styles.category}>GENRE</Text>
             </TouchableOpacity>
 
         </View>

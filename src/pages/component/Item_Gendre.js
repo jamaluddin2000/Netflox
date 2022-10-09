@@ -15,7 +15,7 @@ import IconStar2 from '../asset/IconStar2'
 
 
 
-function Item({ title, tahun, durasi, image, navigation }) {
+function Item_Gendre({ title, tahun, durasi, image, navigation }) {
 
     const handleInput = () => {
 
@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
 
     },
     slidefilm: {
-        // addingHorizontal: 20,
         width: width / 4,
         marginHorizontal: width / 50,
 
@@ -62,4 +61,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Item
+export default Item_Gendre

@@ -17,8 +17,10 @@ const {height, width} = Dimensions.get("window");
 function Category({ navigation, route }) {
 
     const handleAction = () => {
-
-        navigation.navigate('HalamanCategory')
+        console.log(route.data)
+        navigation.navigate('HalamanCategory', {
+            data : route.params.data
+        })
 
     }
 
@@ -26,7 +28,13 @@ function Category({ navigation, route }) {
     return (
         <ScrollView style={{backgroundColor: "black", flex: 1}} >
             <View>
-                <Navbar />
+                <Navbar navigation={navigation}/>
+            </View>
+
+            <View>
+                <Text style={styles.title_Categori}>
+                    GENRE
+                </Text>
             </View>
 
             <TouchableOpacity onPress={handleAction} style={styles.list_kategori}>
@@ -114,6 +122,15 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 20,
         fontWeight:'bold',
+    },
+    title_Categori : {
+        color: "white", 
+        fontSize: 30, 
+        borderBottomWidth: 2, 
+        borderColor: "white",
+        paddingHorizontal: 10,
+         paddingBottom: 10, 
+         marginLeft: 10 
     }
 
 })
