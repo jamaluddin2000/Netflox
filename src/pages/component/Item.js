@@ -10,7 +10,7 @@ import {
 
 
 const { height, width } = Dimensions.get("window");
-import IconStar2 from '../asset/IconStar2'
+import IconStar2 from '../asset/IconStar2.svg'
 
 
 
