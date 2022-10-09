@@ -66,7 +66,7 @@ function Home({ navigation }) {
     return (
         <ScrollView style={{ backgroundColor: "black" }}>
             <View >
-                <Navbar navigation={navigation} />
+                <Navbar navigation={navigation}  />
             </View>
            
             <View>

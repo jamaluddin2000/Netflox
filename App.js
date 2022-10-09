@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./src/pages/component/Home"
 import Description_film from './src/pages/component/Description_film';
 import Item from './src/pages/component/Item';
-import Halaman1 from './src/pages/component/Halaman1';
+import HalamanCategory from './src/pages/component/HalamanCategory';
 import Category from './src/pages/component/Category';
 import Navbar from './src/pages/component/Navbar';
 
@@ -24,7 +24,7 @@ function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Description_film" component={Description_film} />
         <Stack.Screen name="Item" component={Item} />
-        <Stack.Screen name="Halaman1" component={Halaman1} />
+        <Stack.Screen name="HalamanCategory" component={HalamanCategory} />
         <Stack.Screen name="Category" component={Category} />
         <Stack.Screen name="Navbar" component={Navbar} />
 

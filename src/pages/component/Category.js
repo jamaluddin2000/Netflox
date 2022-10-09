@@ -16,13 +16,22 @@ const {height, width} = Dimensions.get("window");
 
 function Category({ navigation, route }) {
 
+    const handleAction = () => {
+
+        navigation.navigate('HalamanCategory', {
+
+        })
+
+    }
+
+
     return (
         <ScrollView style={{backgroundColor: "black", flex: 1}} >
             <View>
                 <Navbar />
             </View>
 
-            <TouchableOpacity style={styles.list_kategori}>
+            <TouchableOpacity onPress={handleAction} style={styles.list_kategori}>
                 <Text style={styles.text} >
                     Action
                 </Text>
