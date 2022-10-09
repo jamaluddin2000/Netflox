@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react'
-import {View, Text, StyleSheet, ScrollView, Image, TextInput, Dimensions} from 'react-native'
-import Navbar from './Navbar'
-
-export const { height, width } = Dimensions.get("window");
-=======
 import {
   View,
   Text,
@@ -16,7 +9,6 @@ import {
 import Navbar from './Navbar';
 
 export const {height, width} = Dimensions.get('window');
->>>>>>> Stashed changes
 
 function Description_film({navigation, route}) {
   const handleInput = () => {
@@ -142,11 +134,6 @@ function Description_film({navigation, route}) {
               />
             </View>
 
-<<<<<<< Updated upstream
-    return (
-        <ScrollView style={{backgroundColor: "black"}}>
-=======
->>>>>>> Stashed changes
             <View>
               <Text style={styles.Nama_Asli}>Nama Asli</Text>
               <Text style={styles.Nama_Pemeran}>Nama Pemeran</Text>
