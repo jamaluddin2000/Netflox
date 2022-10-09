@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
   },
   img: {
     width: width,
-    height: height / 3,
+    height: height /2,
   },
   title: {
     color: '#FF9900',
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     paddingLeft: width / 20,
   },
   Image_Cast: {
-    width: width / 10,
+    width: width / 15,
     height: height / 20,
     borderRadius: 50,
     marginRight: 10,
