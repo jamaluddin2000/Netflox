@@ -10,6 +10,8 @@ import Item from './src/pages/component/Item';
 import HalamanCategory from './src/pages/component/HalamanCategory';
 import Category from './src/pages/component/Category';
 import Navbar from './src/pages/component/Navbar';
+import Item_Gendre from './src/pages/component/Item_Gendre';
+
 
 
 
@@ -27,6 +29,8 @@ function App() {
         <Stack.Screen name="HalamanCategory" component={HalamanCategory} />
         <Stack.Screen name="Category" component={Category} />
         <Stack.Screen name="Navbar" component={Navbar} />
+        <Stack.Screen name="Item_Gendre" component={Item_Gendre} />
+
 
 
       </Stack.Navigator>
