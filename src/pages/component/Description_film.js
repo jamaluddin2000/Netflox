@@ -7,16 +7,18 @@ import {
   Dimensions,
 } from 'react-native';
 import Navbar from './Navbar';
+import IconStar2 from '../asset/IconStar2'
 
-export const {height, width} = Dimensions.get('window');
 
-function Description_film({navigation, route}) {
+export const { height, width } = Dimensions.get('window');
+
+function Description_film({ navigation, route }) {
   const handleInput = () => {
     navigation.navigate('Home');
   };
 
   return (
-    <ScrollView style={{backgroundColor: 'black'}}>
+    <ScrollView style={{ backgroundColor: 'black' }}>
       <View>
         <Navbar navigation={navigation} />
       </View>
@@ -27,7 +29,7 @@ function Description_film({navigation, route}) {
         <Image
           style={styles.img}
           resizeMode={'stretch'}
-          source={{uri: route.params.image}}
+          source={{ uri: route.params.image }}
         />
       </View>
 
@@ -53,10 +55,10 @@ function Description_film({navigation, route}) {
           </Text>
         </View>
 
-        <View style={{flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row' }}>
           <Text
             style={{
-              color: 'darkgray',
+              color: "white",
               fontSize: 13,
               marginLeft: 5,
               marginRight: 20,
@@ -66,18 +68,15 @@ function Description_film({navigation, route}) {
 
           <Text
             style={{
-              color: 'darkgray',
-              backgroundColor: 'white',
+              color: 'white',
               marginRight: 40,
             }}>
             18+
           </Text>
 
-          <Text
-            style={{
-              color: 'darkgray',
-            }}>
-            8.5 - View
+          <Text style={{ color: "white", fontSize: 13, alignSelf: 'flex-end',  }}>
+            <IconStar2 fill="yellow" width={10} height={10} />
+            8.6
           </Text>
         </View>
       </View>
@@ -103,7 +102,7 @@ function Description_film({navigation, route}) {
         </Text>
       </View>
 
-      <View style={{marginVertical: 30}}>
+      <View style={{ marginVertical: 30 }}>
         <Text style={styles.Title_Bagian}>Top Cast</Text>
         <View
           style={{
@@ -112,7 +111,7 @@ function Description_film({navigation, route}) {
             marginBottom: 20,
             marginTop: 20,
           }}>
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <View>
               <Image
                 style={styles.Image_Cast}
@@ -126,7 +125,7 @@ function Description_film({navigation, route}) {
             </View>
           </View>
 
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <View>
               <Image
                 style={styles.Image_Cast}
@@ -141,8 +140,8 @@ function Description_film({navigation, route}) {
           </View>
         </View>
 
-        <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-          <View style={{flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
+          <View style={{ flexDirection: 'row' }}>
             <View>
               <Image
                 style={styles.Image_Cast}
@@ -156,7 +155,7 @@ function Description_film({navigation, route}) {
             </View>
           </View>
 
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <View>
               <Image
                 style={styles.Image_Cast}
@@ -172,7 +171,7 @@ function Description_film({navigation, route}) {
         </View>
       </View>
 
-      <View style={{paddingBottom: 150}}>
+      <View style={{ paddingBottom: 50 }}>
         <Text style={styles.Title_Bagian}>Story Line</Text>
 
         <Text
@@ -203,7 +202,7 @@ const styles = StyleSheet.create({
   },
   img: {
     width: width,
-    height: height / 3,
+    height: height / 2,
   },
   title: {
     color: '#FF9900',
